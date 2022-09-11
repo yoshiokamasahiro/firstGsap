@@ -8,6 +8,129 @@
   <body>
     <h1>first GSAP</h1>
     <div class="box01 box"></div>
+
+    <div class="wrapper">
+      <header>
+        <h1>
+          「GSAPでScrollTriggerプラグインを使ってスクロールに対応したアニメーションを実装してみる＃1：基本編」サンプル
+        </h1>
+      </header>
+      <main>
+        <section>
+          <h2>ビューポートに対して対象要素をトリガーにアニメーションを実行</h2>
+          <div class="example example-01 js-animation-fadein">
+            要素が画面中央に入ると<br />フェードインで表示
+          </div>
+          <div class="example example-01 js-animation-fadein">
+            要素が画面中央に入ると<br />ズームインで表示
+          </div>
+          <div class="example example-01 js-animation-fadein">
+            要素が画面中央に入ると<br />スライドインで表示
+          </div>
+        </section>
+        <!-- <section>
+          <h2>
+            複数要素に対してまとめて同じ条件のトリガーを設定し一度だけアニメーションを実行
+          </h2>
+          <div class="group">
+            <div class="example example-02 js-animation-fadein--batch">
+              要素が画面内に入ると<br />フェードインで表示され<br />順スクロールで画面から<br />外れると赤色になります
+            </div>
+            <div class="example example-02 js-animation-fadein--batch">
+              要素が画面内に入ると<br />フェードインで表示され<br />順スクロールで画面から<br />外れると赤色になります
+            </div>
+            <div class="example example-02 js-animation-fadein--batch">
+              要素が画面内に入ると<br />フェードインで表示され<br />順スクロールで画面から<br />外れると赤色になります
+            </div>
+            <div class="example example-02 js-animation-fadein--batch">
+              要素が画面内に入ると<br />フェードインで表示され<br />順スクロールで画面から<br />外れると赤色になります
+            </div>
+            <div class="example example-02 js-animation-fadein--batch">
+              要素が画面内に入ると<br />フェードインで表示され<br />順スクロールで画面から<br />外れると赤色になります
+            </div>
+            <div class="example example-02 js-animation-fadein--batch">
+              要素が画面内に入ると<br />フェードインで表示され<br />順スクロールで画面から<br />外れると赤色になります
+            </div>
+            <div class="example example-02 js-animation-fadein--batch">
+              要素が画面内に入ると<br />フェードインで表示され<br />順スクロールで画面から<br />外れると赤色になります
+            </div>
+            <div class="example example-02 js-animation-fadein--batch">
+              要素が画面内に入ると<br />フェードインで表示され<br />順スクロールで画面から<br />外れると赤色になります
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>連続した要素に対して時間差でアニメーションを実行</h2>
+          <div class="group">
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+            <div class="example example-03 js-animation-fadein--sequential">
+              要素が画面内に入ると<br />時間差でフェードイン表示
+            </div>
+          </div>
+        </section> -->
+      </main>
+      <footer>
+        <!-- <a href="https://designsupply-web.com/media/programming/6982/"
+          >記事に戻る ＞＞</a
+        > -->
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
