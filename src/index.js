@@ -11,7 +11,7 @@ gsap.to(elmh2, {
   x: 0,
   duration: 2,
   color: "red",
-  //scale: 0.5,
+  //scale: 1.5,
   repeat: -1,
   repeatDelay: 2,
   //opacity:0.2,
@@ -97,4 +97,12 @@ gsap.from(".container__tile__tiles", {
   repeat: -1,
   repeatDelay: 1,
   yoyo: true
+});
+gsap.to(".container__tile__tiles:nth-child(2n)", {
+  backgroundColor: "#ABE588",
+  duration: 0.6
+});
+gsap.to(".container__tile__tiles:nth-child(3n)", {
+  backgroundColor: "darkcyan",
+  duration: 0.8
 });
