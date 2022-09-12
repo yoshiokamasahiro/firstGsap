@@ -30,3 +30,31 @@ gsap.fromTo(
     }
   }
 );
+
+// gsap.to(".rect", { x: 200, duration: 2 });
+
+gsap.to(".__first", {
+  //x: 200,
+  duration: 4,
+  backgroundColor: "#ccc",
+  yoyo: true, //反転繰り返し
+  repeatDelay: 1,
+  repeat: -1,
+  ease: "power2.out"
+});
+gsap.to(".__second", {
+  x: 100,
+  duration: 4,
+  backgroundColor: "red",
+  yoyo: true,
+  repeat: -1,
+  repeatDelay: 1
+});
+gsap.to(".__third", {
+  x: 200,
+  duration: 4,
+  backgroundColor: "#ccc",
+  yoyo: true,
+  repeat: -1,
+  repeatDelay: 2
+});

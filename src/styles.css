@@ -54,3 +54,11 @@ p span:hover {
   background: lightsalmon;
   margin: 20px 20px 0 0;
 }
+
+.rect {
+  width: 10vw;
+  height: 10vw;
+  display: block;
+  background: black;
+  position: relative;
+}
