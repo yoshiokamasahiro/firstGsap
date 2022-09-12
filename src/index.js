@@ -88,5 +88,8 @@ gsap.from(".container__tile__tiles", {
   opacity: 0,
   stagger: 0.2,
   duration: 1,
-  ease: "Power4.out"
+  ease: "Power4.out",
+  repeat: -1,
+  repeatDelay: 1,
+  yoyo: true
 });
