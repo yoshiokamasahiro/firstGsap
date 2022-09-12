@@ -78,16 +78,21 @@ gsap.to(".__third", {
   ease: "Power4.out"
 });
 
-for (let i = 0; i < 200; i++) {
+for (let i = 0; i < 100; i++) {
   const tile = document.createElement("div");
   tile.classList.add("container__tile__tiles");
   document.querySelector(".container__tile").appendChild(tile);
 }
 gsap.from(".container__tile__tiles", {
-  y: 10,
+  y: 100,
   opacity: 0,
-  stagger: 0.2,
-  duration: 1,
+  //stagger: 0.2,
+  stagger: {
+    each: 0.2,
+    from: "random" //ランダム
+    //from: "center"
+  },
+  duration: 0.5,
   ease: "Power4.out",
   repeat: -1,
   repeatDelay: 1,
