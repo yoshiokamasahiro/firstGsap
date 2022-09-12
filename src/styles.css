@@ -4,6 +4,7 @@ footer {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  -webkit-touch-callout: #ccc;
 }
 section,
 footer {
@@ -15,10 +16,10 @@ a {
   font-weight: bold;
 }
 h1 {
-  font-size: 20px;
+  font-size: 24px;
 }
 h2 {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 30px;
 }
 p span:hover {
@@ -60,5 +61,18 @@ p span:hover {
   height: 10vw;
   display: block;
   background: black;
+  position: relative;
+}
+
+.container__tile {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 5vw);
+  gap: 10px;
+}
+.container__tile__tiles {
+  width: 5vw;
+  height: 5vh;
+  display: block;
+  background: pink;
   position: relative;
 }

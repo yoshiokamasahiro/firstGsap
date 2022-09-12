@@ -1,6 +1,22 @@
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "./styles.css";
+//h2アニメーション 代入
+const elmh2 = document.createElement("h2");
+const divTarget = document.getElementById("header");
+elmh2.textContent = "HELLO　GSAP";
+divTarget.appendChild(elmh2);
+//console.log(elmh2);
+gsap.to(elmh2, {
+  x: 0,
+  duration: 2,
+  color: "red",
+  //scale: 0.5,
+  repeat: -1,
+  repeatDelay: 2,
+  //opacity:0.2,
+  yoyo: true
+});
 
 const box01 = document.querySelectorAll(".box01");
 gsap.to(box01, {
@@ -43,18 +59,34 @@ gsap.to(".__first", {
   ease: "power2.out"
 });
 gsap.to(".__second", {
-  x: 100,
-  duration: 4,
+  x: 200,
+  duration: 2,
   backgroundColor: "red",
   yoyo: true,
   repeat: -1,
-  repeatDelay: 1
+  repeatDelay: 1,
+  ease: "expo.out"
 });
 gsap.to(".__third", {
-  x: 200,
-  duration: 4,
+  x: 300,
+  duration: 2,
   backgroundColor: "#ccc",
   yoyo: true,
   repeat: -1,
-  repeatDelay: 2
+  repeatDelay: 2,
+  rotate: 360,
+  ease: "Power4.out"
+});
+
+for (let i = 0; i < 200; i++) {
+  const tile = document.createElement("div");
+  tile.classList.add("container__tile__tiles");
+  document.querySelector(".container__tile").appendChild(tile);
+}
+gsap.from(".container__tile__tiles", {
+  y: 10,
+  opacity: 0,
+  stagger: 0.2,
+  duration: 1,
+  ease: "Power4.out"
 });
